@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu de Labyrinthe</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Jeu de Labyrinthe</h1>
+    <p>Utilise les flèches du clavier pour atteindre la sortie le plus vite possible.</p>
+  </header>
+
+  <main class="game-container">
+    <section class="hud">
+      <div class="info-box">
+        <h2>Score</h2>
+        <p id="score">0</p>
+      </div>
+
+      <div class="info-box">
+        <h2>Temps</h2>
+        <p id="timer">0 s</p>
+      </div>
+
+      <div class="info-box">
+        <h2>Meilleur temps</h2>
+        <p id="best-time">--</p>
+      </div>
+    </section>
+
+    <section class="board-section">
+      <div id="maze" class="maze">
+        <!-- Le labyrinthe sera généré ici avec JavaScript -->
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="start-btn">Démarrer</button>
+      <button id="restart-btn">Rejouer</button>
+    </section>
+
+    <section class="instructions">
+      <h2>Instructions</h2>
+      <ul>
+        <li>Déplace le personnage avec les touches fléchées.</li>
+        <li>Évite les murs.</li>
+        <li>Atteins la sortie pour gagner.</li>
+        <li>Essaie d’obtenir le meilleur temps.</li>
+      </ul>
+    </section>
+
+    <section class="message-box">
+      <p id="message">Bonne chance !</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Projet Front-End PI2 : HTML, CSS, JavaScript</p>
+  </footer>
+
+  <script src="js/maze.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
